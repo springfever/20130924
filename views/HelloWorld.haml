@@ -1,0 +1,9 @@
+!!!
+%html{:lang => 'ja'}
+  %body
+    %p
+      #{@message}
+      %hr
+      - @bbs.each do |bbs|
+        #{bbs.title}
+

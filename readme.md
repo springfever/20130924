@@ -8,11 +8,11 @@
 
 以下のサイトも参考になります
 
-[Sinatra: README (Japanese)](http://www.sinatrarb.com/intro-jp.html)
+- [Sinatra: README (Japanese)](http://www.sinatrarb.com/intro-jp.html)
 
 ### このリポジトリの内容
 
-Sinatraが動作する必要最低限の構成を収録しておきました。
+Sinatraが動作する必要最低限の構成で掲示板っぽいものを収録しておきました。
 
 ``` foreman start ```
 
@@ -21,6 +21,22 @@ Sinatraが動作する必要最低限の構成を収録しておきました。
 http://0.0.0.0:5000
 
 を開いてください。
+
+## 仕様
+
+- sinatra
+- sqlite
+- haml
+
+### DB構造
+
+Sample table
+
+|field|詳細|
+|-----|-----|
+|title|text|
+
+これだけしかないので、自由に拡張しましょう
 
 ## おわりに
 

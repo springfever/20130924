@@ -1,0 +1,13 @@
+!!!
+%html{:lang => 'ja'}
+  %body
+    %p
+    %form{:action=>"/",:method=>"post"}
+      %input{:type=>'text',:name=>"title"}
+      %input{:type=>"submit"}
+    %hr
+    - @bbs.each do |bbs|
+      %p
+        #{bbs.title}
+    %hr
+    %a{:href => '/'} 戻る
